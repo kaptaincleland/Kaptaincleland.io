@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=0.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kaptain Cleland</title>
     <link rel="stylesheet" href="styles/style.css">
     <script src="https://kit.fontawesome.com/b75ac65de5.js" crossorigin="anonymous"></script>
+
 </head>                       
 <body>
 <div id="preloader"></div>
@@ -21,7 +22,9 @@
                 <li><a href="#">Portfolio</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
-        </nav>
+            <i class="fas fa-times"></i> <!-- Use "fas" for Solid icons -->
+            <i class="fas fa-bars"></i> <!-- Use "fas" for Solid icons -->
+        </nav>        
         <div class="header-text">
              <p>Gamer/Programmer/Content Creater</p>
              <h1>Hi I'm<span> Nesta</span> Cleland<br> Okine from Ghana</h1>
@@ -77,13 +80,13 @@
         <h1 class="sub-title">My Services</h1> 
         <div class="services-list">
           <div>
-            <i class="fa-sharp fa-solid fa-code"></i>
+            <i class="fas fa-code"></i>
             <h2>Web developer</h2>
             <p>I develope website for people,organizations and companies.</p>
             <a href="#">Learn More</a>
           </div>
           <div>
-            <i class="fa-solid fa-gamepad"></i>
+            <i class="fas fa-gamepad"></i>
             <h2>Gamer</h2>
             <p>Playing Games reduces my stress.</p>
             <a href="#">Learn More</a>
@@ -107,7 +110,7 @@
                 <div class="layer">
                     <h3>Blog Website development</h3>
                     <p>A blog website that gives people reasonable information</p>
-                    <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a href="#"><i class="fas fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
             <div class="work">
@@ -115,7 +118,7 @@
                 <div class="layer">
                     <h3>Leisure Gamer</h3>
                     <p>I Play some of the most viral Games</p>
-                    <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a href="#"><i class="fas fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
             <div class="work">
@@ -123,7 +126,7 @@
                  <div class="layer">
                     <h3>Portfolio Website development</h3>
                     <p>A website thats shows your skills,and your previous projects.</p>
-                    <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a href="#"><i class="fas fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
         </div>
@@ -136,25 +139,28 @@
         <div class="row">
             <div class="contact-left">
                 <h1 class="sub-title">Contact Me</h1>
-                <p> <i class="fa-solid fa-envelope"></i>kaptaincleland@gmail.com</p>
-                <p> <i class="fa-solid fa-phone"></i>+233 559714595</p>
+                <p> <i class="fas fa-envelope"></i>kaptaincleland@gmail.com</p>
+                <p> <i class="fas fa-phone"></i>+233 559714595</p>
                 <div class="social-icons">
                     <a href="https://twitter.com/nco45nco"><i class="fa-brands fa-square-x-twitter"></i></a>
                     <a href=""><i class="fa-brands fa-square-instagram"></i></a>
                     <a href=""><i class="fa-brands fa-youtube"></i></a>
                     <a href="https://github.com/kaptaincleland"><i class="fa-brands fa-github"></i></a>
                 </div>
-                <a href="" class="btn btn2">Download Cv</a>
+                <a href="images/cv.rtf" download="My Cv.txt" class="btn btn2">Download Cv</a>
             </div>
             <div class="contact-right">
                 <form>
-                    <input type="text" name="Name" placeholder="Your Name">
-                    <input type="email" name="Email" placeholder="Your Email">
-                    <textarea name="Message" placeholder="Your Message" rows="6"></textarea>
-                    <button type="submit">Submit</button>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email"required>
+                    <textarea name="Message" placeholder="Your Message" rows="6"></textarea required>
+                    <button type="submit" class="btn btn2">Submit</button>
                 </form>
             </div>
         </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Kaptaincleland Made with <i class="fas fa-heart"></i> By Me</p>
     </div>
 </div>
 
