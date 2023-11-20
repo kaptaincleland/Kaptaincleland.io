@@ -334,12 +334,13 @@ nav .fas {
         background: #ff004f;
         position: fixed;
         top: 0;
-        right: 0;
+        right: -200px; /* Adjust the right position to hide the menu initially */
         width: 200px;
         height: 100vh;
         padding-top: 50px;
         color: #000; /* Set text color to black */
-    }    
+        z-index: 2;
+      } 
     nav ul li {
         display: block;
         margin: 25px;
