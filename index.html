@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Portfolio of Nesta Cleland, a programmer, gamer, and content creator from Ghana.">
+    <meta name="keywords" content="Nesta Cleland, Web Developer, Programmer, Content Creator, Gamer">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kaptain Cleland</title>
     <link rel="stylesheet" href="styles/style.css">
@@ -21,9 +22,9 @@
                 <li><a href="#services">Services</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#Contact">Contact</a></li>
-                <i class="fas fa-times" onclick="closemenu()"></i> <!-- Use "fas" for Solid icons -->
+                <i class="fas fa-times" onclick="closemenu()"></i>
             </ul>
-            <i class="fas fa-bars" onclick="openmenu()"></i> <!-- Use "fas" for Solid icons -->
+            <i class="fas fa-bars side-menu" onclick="openmenu()"></i> <!-- Hamburger icon to open menu -->
         </nav>        
         <div class="header-text">
              <p>Gamer/Programmer/Content Creater</p>
@@ -52,7 +53,7 @@
                  <div class="tab-contents active-tab" id="skills">
                     <ul>
                         <li><span>Gamer</span><br>I enjoy playing games</li>
-                        <li><span>Promammer</span><br>HTML - CSS - JavaScript</li>
+                        <li><span>Programmer</span><br>HTML - CSS - JavaScript</li>
                         <li><span>Content Creator</span><br>Always happy with what I put on internet</li>
                     </ul>
                  </div>
@@ -154,7 +155,7 @@
                 <form>
                     <input type="text" name="Name" placeholder="Your Name" required>
                     <input type="email" name="Email" placeholder="Your Email"required>
-                    <textarea name="Message" placeholder="Your Message" rows="6"></textarea required>
+                    <textarea name="Message" placeholder="Your Message" rows="6" required></textarea required>
                     <button type="submit" class="btn btn2">Submit</button>
                 </form>
             </div>
@@ -186,12 +187,27 @@
     var sidemenu = document.getElementById("sidemenu");
 
     function openmenu() {
-        sidemenu.style.right = "0";
-    }
+    document.getElementById("sidemenu").style.right = "0"; // Show the menu
+}
+
     function closemenu() {
-        sidemenu.style.right = "-200px";
-    }
+    document.getElementById("sidemenu").style.right = "-200px"; // Hide the menu
+}
 </script>
+<script>
+    const menu = document.querySelector('nav ul');
+    const sideMenu = document.querySelector('.side-menu');
+    const closeIcon = document.querySelector('.fas.fa-times');
+
+    sideMenu.addEventListener('click', () => {
+        menu.style.right = '0'; // Show the menu (slide in)
+    });
+
+    closeIcon.addEventListener('click', () => {
+        menu.style.right = '-200px'; // Hide the menu (slide out)
+    });
+</script>
+
 
 <script>
 
